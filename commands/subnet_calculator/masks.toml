@@ -1,0 +1,22 @@
+name = "/subnet:masks"
+description = "Show the Netmask and Wildcard Mask for a given CIDR."
+
+prompt = """
+You have the tool: subnet_calculator.
+
+Behavior:
+- Parse the required argument: cidr:str (e.g., 192.168.5.128/25)
+- Call subnet_calculator(cidr=...) once with the parsed argument.
+
+Output:
+- Extract and display the **netmask** and **wildcard_mask** in a side-by-side or clearly labeled format.
+- Example:
+  - Netmask: 255.255.255.128
+  - Wildcard Mask: 0.0.0.127
+- Mention the prefix length (`prefix_length`) for context.
+- If an error occurs, print the error message from the tool.
+
+"""
+
+[defaults]
+# No defaults needed.

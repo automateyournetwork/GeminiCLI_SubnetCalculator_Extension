@@ -1,0 +1,23 @@
+name = "/subnet:hosts"
+description = "Get the total count and range of usable host addresses for a CIDR."
+
+prompt = """
+You have the tool: subnet_calculator.
+
+Behavior:
+- Parse the required argument: cidr:str (e.g., 10.0.0.0/8)
+- Call subnet_calculator(cidr=...) once with the parsed argument.
+
+Output:
+- Extract and prominently display only the following information from the tool's result:
+    - **usable_hosts_count**
+    - **first_usable**
+    - **last_usable**
+    - **address_range**
+- Present the result concisely, e.g., "The network 192.168.1.0/24 has 254 usable hosts, ranging from 192.168.1.1 to 192.168.1.254."
+- If an error occurs, print the error message from the tool.
+
+"""
+
+[defaults]
+# No defaults needed.

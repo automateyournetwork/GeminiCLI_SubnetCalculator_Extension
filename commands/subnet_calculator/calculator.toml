@@ -1,0 +1,20 @@
+name = "/subnet:calc"
+description = "Calculates all network details (addresses, range, masks, neighbors) for a given CIDR."
+
+prompt = """
+You have the tool: subnet_calculator.
+
+Behavior:
+- Parse the required argument: cidr:str (e.g., 192.168.1.0/24)
+- **Do not invent any defaults**; if cidr is missing or invalid, ask the user to provide a valid CIDR string.
+- Call subnet_calculator(cidr=...) once with the parsed argument.
+
+Output:
+- Format the complete dictionary result into a **clear, structured, human-readable table or list**.
+- Ensure all key details are present: Network Address, Broadcast Address, Netmask, Wildcard Mask, Prefix Length, Total Addresses, Usable Hosts Count, First Usable Host, Last Usable Host, Previous Subnet, and Next Subnet.
+- If an error occurs, print the error message from the tool.
+
+"""
+
+[defaults]
+# Note: No default for CIDR here, as it's required for the tool to run.

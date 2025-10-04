@@ -1,0 +1,29 @@
+name = "/subnet:help"
+description = "Show documentation and examples for all /subnet commands."
+
+prompt = """
+You have the tool: subnet_calculator.
+
+Behavior:
+- **DO NOT** call any tools. This command is purely for documentation and guidance.
+- Review the other available subnet slash commands (e.g., /subnet:calc, /subnet:hosts, /subnet:next, /subnet:masks).
+- Use your knowledge of the 'subnet_calculator' tool's capabilities to provide clear, actionable help.
+
+Output:
+- Provide a summary of the Subnet Calculator MCP extension.
+- List the available subnet commands in a clear, formatted list (like a table or markdown list).
+- For each command (including this one), give its **name**, a **brief description**, and an **example** of how to use it with a CIDR (e.g., 192.168.1.0/24).
+- The list should be formatted like this:
+
+| Command | Description | Example |
+| :--- | :--- | :--- |
+| /subnet:calc | Calculates ALL details (masks, range, neighbors). | /subnet:calc 10.0.0.0/8 |
+| /subnet:hosts | Shows usable host count and the first/last usable IPs. | /subnet:hosts 172.16.1.0/27 |
+| /subnet:next | Finds the next sequential subnet of the same size. | /subnet:next 192.168.50.0/26 |
+| /subnet:masks | Displays the Netmask and Wildcard Mask. | /subnet:masks 192.168.0.0/24 |
+| /subnet:help | Shows this help message. | /subnet:help |
+
+"""
+
+[defaults]
+# No defaults needed.

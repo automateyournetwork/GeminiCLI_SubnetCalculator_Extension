@@ -1,0 +1,20 @@
+name = "/subnet:next"
+description = "Find the next sequential subnet of the same size following the provided CIDR."
+
+prompt = """
+You have the tool: subnet_calculator.
+
+Behavior:
+- Parse the required argument: cidr:str (e.g., 172.16.0.0/16)
+- Call subnet_calculator(cidr=...) once with the parsed argument.
+
+Output:
+- Extract and return **ONLY** the `next_subnet` value.
+- The output should be a single line, like: "The next subnet after 172.16.0.0/16 is 172.17.0.0/16."
+- Include the `summary` in a smaller note for context.
+- If an error occurs, print the error message from the tool.
+
+"""
+
+[defaults]
+# No defaults needed.
