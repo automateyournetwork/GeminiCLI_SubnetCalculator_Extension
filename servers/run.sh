@@ -20,4 +20,4 @@ if [ -f "$SERVERS_DIR/requirements.txt" ]; then
 fi
 
 # 3) Exec the MCP server (this must be the ONLY thing that writes to STDOUT)
-exec "$VENV/bin/python3" "$SERVERS_DIR/subnetcalulator_mcp.py"
+exec "$VENV/bin/python3" "$SERVERS_DIR/subnetcalculator_mcp.py"
